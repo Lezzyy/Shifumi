@@ -1,3 +1,5 @@
+/*function myFunction(){
+var el = document.getElementById("start");
 var joueur = prompt ("Quel est votre pseudo ?");
 var pointJoueur = 0;
 var pointOrdi = 0;
@@ -36,5 +38,6 @@ while (pointJoueur <3 && pointOrdi <3 && jeu!="exit"){
        }
        else {
         alert('Veuillez entrer une donnée correcte !');
-       }
+      }*/
   }
+}
