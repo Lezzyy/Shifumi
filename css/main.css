@@ -16,6 +16,8 @@ html {
     line-height: 1.4;
 }
 
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -94,10 +96,42 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body{
+  background-color: #FFEDBC;
+  font-family: 'Roboto', sans-serif;
+}
+
 
 .btn-primary {
   margin-top: 200px;
 }
+
+h1 {
+  color: #EC7263;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+}
+
+.btn-custom {
+  margin-top: 5px;
+  background-color: #EC7263;
+  color: #ffffff;
+}
+
+.btn-custom:hover {
+  background-color: #FF6138;
+  color: #A75265;
+}
+
+
 
 
 
