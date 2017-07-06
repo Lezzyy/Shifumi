@@ -32,8 +32,9 @@
     <![endif]-->
 
     <!-- TU CODES ICI -->
+
     <div class="col md-4 text-center">
-      <button type="button" id="bouton" class= "btn btn-primary" onclick="myFunction()">Commencer le jeu</button>
+      <button type="button" id="bouton" class= "btn btn-custom" onclick="myFunction()">Commencer le jeu</button>
     </div>
 
 
@@ -42,7 +43,6 @@
       <div class="container">
         <div class="row">
           <h1 class="col-md-12 col-lg-12 col-xs-12 col-sm-12">Pierre Feuille Ciseaux</h1>
-
         </div>
       </div>
     </div>
@@ -51,23 +51,24 @@
       <div class="row">
         <form method="post" name="formulaire" class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
           <fieldset>
-            <input type="text" name="nom" class="span6" placeholder="Entrez votre pseudo"></br>
-            <button class="btn btn-custom">OK</button>
+            <input id="pseudo" type="text" name="pseudo" class="span6" placeholder="Entrez votre pseudo"></br>
+            <a id="ok" class="btn btn-custom">OK</a>
           </fieldset>
         </form>
+        <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12" id="score">
+        </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
-        <img src="img/zen-stones.png" alt="pierre" id="pierre" class="col-md-4 col-lg-4 col-xs-4 col-sm-4">
-        <img src="img/leaves.png" alt="feuille" id="feuille" class="col-md-4 col-lg-4 col-xs-4 col-sm-4">
-        <img src="img/openned-scissors.png" alt="ciseaux" id="ciseaux" class="col-md-4 col-lg-4 col-xs-4 col-sm-4">
+        <p id="bienvenue" class="col-md-12 col-lg-12 col-xs-12 col-sm-12"></p></br>
+        <img class="col-md-4 col-lg-4 col-xs-4 col-sm-4 img-fluid" src="img/zen-stones.png" alt="pierre" id="pierre">
+        <img class="col-md-4 col-lg-4 col-xs-4 col-sm-4 img-fluid" src="img/leaves.png" alt="feuille" id="feuille">
+        <img class="col-md-4 col-lg-4 col-xs-4 col-sm-4 img-fluid" src="img/openned-scissors.png" alt="ciseaux" id="ciseaux">
       </div>
     </div>
 
-
-    <script type="text/javascript" src="js/main.js">  </script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
 

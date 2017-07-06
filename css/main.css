@@ -102,7 +102,7 @@ body{
 }
 
 
-.btn-primary {
+ #bouton {
   margin-top: 200px;
 }
 
@@ -131,11 +131,23 @@ input {
   color:#ffffff;
 }
 
+#bienvenue {
+  text-align: center;
+  color: #644D52;
+  margin-top: 10px;
+}
+
 img{
-  
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+@media screen and (max-width: 579px) {
+ img {
+
+  }
+}
+
 
 
 
