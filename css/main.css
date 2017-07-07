@@ -97,17 +97,22 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-  background-color: #FFEDBC;
+  background-color: #40152A;
   font-family: 'Roboto', sans-serif;
 }
 
 
  #bouton {
   margin-top: 200px;
+  color: #ffffff;
+}
+
+#ok {
+  color:#ffffff;
 }
 
 h1 {
-  color: #EC7263;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -133,20 +138,30 @@ input {
 
 #bienvenue {
   text-align: center;
-  color: #644D52;
+  color: #612141;
   margin-top: 10px;
+  font-size: x-large;
+  font-weight: bold;
 }
+
 
 img{
   margin-top: 30px;
   margin-bottom: 30px;
+  width : 10vw;
 }
 
-@media screen and (max-width: 579px) {
- img {
-
-  }
+#ciseaux {
+  margin-right: 320px;
 }
+
+#player_name {
+  color: #CC1E2C;
+}
+
+
+
+
 
 
 

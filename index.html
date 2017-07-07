@@ -34,12 +34,12 @@
     <!-- TU CODES ICI -->
 
     <div class="col md-4 text-center">
-      <button type="button" id="bouton" class= "btn btn-custom" onclick="myFunction()">Commencer le jeu</button>
+      <a id="bouton" class= "btn btn-custom">Commencer le jeu</a>
     </div>
 
 
     <p id="start"></p>
-    <div class="container-fluid">
+    <div class="container-fluid" id="titre">
       <div class="container">
         <div class="row">
           <h1 class="col-md-12 col-lg-12 col-xs-12 col-sm-12">Pierre Feuille Ciseaux</h1>
@@ -47,12 +47,13 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="form">
       <div class="row">
         <form method="post" name="formulaire" class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
           <fieldset>
             <input id="pseudo" type="text" name="pseudo" class="span6" placeholder="Entrez votre pseudo"></br>
             <a id="ok" class="btn btn-custom">OK</a>
+            <p id="bienvenue" class="col-md-12 col-lg-12 col-xs-12 col-sm-12"></p></br>
           </fieldset>
         </form>
         <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12" id="score">
@@ -61,11 +62,18 @@
     </div>
 
     <div class="container-fluid">
-      <div class="row">
-        <p id="bienvenue" class="col-md-12 col-lg-12 col-xs-12 col-sm-12"></p></br>
-        <img class="col-md-4 col-lg-4 col-xs-4 col-sm-4 img-fluid" src="img/zen-stones.png" alt="pierre" id="pierre">
-        <img class="col-md-4 col-lg-4 col-xs-4 col-sm-4 img-fluid" src="img/leaves.png" alt="feuille" id="feuille">
-        <img class="col-md-4 col-lg-4 col-xs-4 col-sm-4 img-fluid" src="img/openned-scissors.png" alt="ciseaux" id="ciseaux">
+      <div class="container">
+        <div class="row logo">
+          <p id="player_name"></p></br>
+          <a><img  class="col-xs-12" src="img/zen-stones.png" alt="pierre" id="pierre"></a>
+          <a><img  src="img/leaves.png" alt="feuille" id="feuille"></a>
+          <a><img  src="img/openned-scissors.png" alt="ciseaux" id="ciseaux"></a>
+        <div class="ordi">
+          <a><img  src="img/zen-stones.png" alt="pierre" id="ordi_pierre"></a>
+          <a><img  src="img/leaves.png" alt="feuille" id="ordi_feuille"></a>
+          <a><img  src="img/openned-scissors.png" alt="ciseaux" id="ordi_ciseaux"></a>
+        </div>
+        </div>
       </div>
     </div>
 
