@@ -4,6 +4,7 @@ var form = document.getElementById('form');
 var pierre = document.getElementById('pierre');
 var feuille = document.getElementById('feuille');
 var ciseaux = document.getElementById('ciseaux');
+var ordi_choice = document.getElementById("ordi_choice");
 
 
 titre.style.display='none';
@@ -11,6 +12,7 @@ form.style.visibility ='hidden';
 pierre.style.visibility = 'hidden';
 feuille.style.visibility = 'hidden';
 ciseaux.style.visibility = 'hidden';
+ordi_choice.style.display = 'none';
 
 
 begin.onclick=function(){
@@ -27,49 +29,60 @@ begin.onclick=function(){
 var pseudo = document.getElementById('pseudo');
 var ok = document.getElementById('ok');
 var bienvenue = document.getElementById('bienvenue');
-var player_name = document.getElementById('player_name');
+var titre_pseudo = document.getElementById('titre_pseudo');
 var value;
 
 ok.onclick=function(){
 value=pseudo.value;
-bienvenue.innerHTML= "Bienvenue " + value.toUpperCase();
-player_name.innerHTML= value.toUpperCase() ;
+bienvenue.innerHTML= "BIENVENUE " + value.toUpperCase();
 pseudo.style.display='none';
 ok.style.display= 'none';
+titre_pseudo.style.display = 'none';
 }
 
-var choix_ordi = document.getElementById('choix_ordi');
-var img_pierre = document.getElementsByTagName("IMG")[0].id;
-var img_feuille = document.getElementsByTagName("IMG")[1].id;
-var img_ciseaux = document.getElementsByTagName("IMG")[2].id;
+
+var img_pierre = document.getElementById("pierre").src;
+var img_feuille = document.getElementsByTagName("IMG")[1];
+var img_ciseaux = document.getElementsByTagName("IMG")[2];
+var score = document.getElementById("score");
 var pointJoueur = 0;
 var pointOrdi = 0;
 
+
 function joueur(user_choice){
+ordi_choice.style.display = 'block';
 var ordi = Math.random()*3 ;
+
   if (ordi<1){
     ordi='pierre';
+    ordi_choice.innerHTML ="<img src='img/stones_grey.png' >";
   }
   else if (ordi>1 && ordi<2){
     ordi='feuille';
+    ordi_choice.innerHTML = "<img src='img/leaf_grey.png'>";
   }
   else if (ordi>2){
     ordi='ciseaux';
+    ordi_choice.innerHTML= "<img src='img/scissors_grey.png'>";
   }
 
-if(user_choice=='pierre' && ordi=="feuille" || user_choice=="feuille" && ordi=='ciseaux' || user_choice=='ciseaux' && ordi=='pierre'){
+
+    if (user_choice=='pierre' && ordi=="feuille" || user_choice=="feuille" && ordi=='ciseaux' || user_choice=='ciseaux' && ordi=='pierre'){
       pointOrdi++;
-      alert("Perdu\n" + value +" "+ pointJoueur + " - ordi " + pointOrdi + "\nPour quitter le jeu, tapez 'exit'");
+      bienvenue.innerHTML= "Perdu " ;
+      score.innerHTML = value +" "+ pointJoueur + " - ordi " + pointOrdi
     }
+
     else if (user_choice=='pierre' && ordi=='ciseaux' || user_choice=="feuille" && ordi=='pierre' || user_choice=='ciseaux' && ordi=="feuille" ){
       pointJoueur++;
-      alert("Gagné \n" + value +" "+ pointJoueur + " - ordi " + pointOrdi  + "\nPour quitter le jeu, tapez 'exit'");
+      bienvenue.innerHTML = "Gagné" ;
+      score.innerHTML = value +" "+ pointJoueur + " - ordi " + pointOrdi ;
     }
     else {
-      alert("Nul !\n" + value +" "+ pointJoueur + " - ordi " + pointOrdi  + "\nPour quitter le jeu, tapez 'exit'");
+    bienvenue.innerHTML = "Nul !" ;
+    score.innerHTML = value +" "+ pointJoueur + " - ordi " + pointOrdi;
     }
   }
-
 
 
 
@@ -103,7 +116,7 @@ var ordi = Math.random()*3 ;
     alert("Nul !\n" + joueur +" "+ pointJoueur + " - ordi " + pointOrdi  + "\nPour quitter le jeu, tapez 'exit'");
   }
  }
- }
+ }*/
 
 // function myFunction(){
 //   var el = document.getElementById("start");

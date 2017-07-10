@@ -97,7 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-  background-color: #ffffff;
+  background-color: #292929;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -111,11 +111,15 @@ body{
   color:#ffffff;
 }
 
-h1 {
-  color: #F77A52;
-  text-transform: uppercase;
-  font-weight: bold;
+h2 {
+  color: #ffffff;
   text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size:x-large;
 }
 form {
   text-align: center;
@@ -127,7 +131,7 @@ input {
 
 .btn-custom {
   margin-top: 5px;
-  background-color: #EC7263;
+  background-color: #FF8606;
   color: #ffffff;
 }
 
@@ -138,7 +142,7 @@ input {
 
 #bienvenue {
   text-align: center;
-  color: #612141;
+  color: #FF8606;
   font-size: x-large;
   font-weight: bold;
 }
@@ -147,7 +151,7 @@ input {
 img{
   margin-top: 10px;
   margin-bottom: 10px;
-  width : 10vw;
+  width : 20vw;
 }
 
 
@@ -157,11 +161,24 @@ img{
   font-weight: bold;
 }
 
-#choix_ordi {
-  margin-right: 20px;
+aside {
+  float: right;
 }
 
+#ordi_choice {
+  background-color: #ffffff;
+  border-color: #FF8606;
+  border-width: 10px;
+  background-size: 20vw;
+  margin-left: 50px;
+}
 
+#score {
+  text-align: center;
+  color: #FF8606;
+  font-size: x-large;
+  font-weight: bold;
+}
 
 
 
