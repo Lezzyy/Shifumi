@@ -97,7 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 body{
-  background-color: #40152A;
+  background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -112,7 +112,7 @@ body{
 }
 
 h1 {
-  color: #ffffff;
+  color: #F77A52;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
@@ -139,28 +139,27 @@ input {
 #bienvenue {
   text-align: center;
   color: #612141;
-  margin-top: 10px;
   font-size: x-large;
   font-weight: bold;
 }
 
 
 img{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width : 10vw;
 }
 
-#ciseaux {
-  margin-right: 320px;
-}
 
 #player_name {
-  color: #CC1E2C;
+  color: #40152A;
+  font-size: large;
+  font-weight: bold;
 }
 
-
-
+#choix_ordi {
+  margin-right: 20px;
+}
 
 
 
