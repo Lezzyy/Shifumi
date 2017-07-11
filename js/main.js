@@ -17,11 +17,7 @@ ordi_choice.style.display = 'none';
 
 begin.onclick=function(){
   begin.style.display='none';
-  titre.style.display ='block';
   form.style.visibility = 'visible';
-  pierre.style.visibility = 'visible';
-  feuille.style.visibility = 'visible';
-  ciseaux.style.visibility = 'visible';
 }
 
 
@@ -38,6 +34,10 @@ bienvenue.innerHTML= "BIENVENUE " + value.toUpperCase();
 pseudo.style.display='none';
 ok.style.display= 'none';
 titre_pseudo.style.display = 'none';
+titre.style.display ='block';
+pierre.style.visibility = 'visible';
+feuille.style.visibility = 'visible';
+ciseaux.style.visibility = 'visible';
 }
 
 
@@ -72,15 +72,14 @@ var ordi = Math.random()*3 ;
       bienvenue.innerHTML= "Perdu " ;
       score.innerHTML = value +" "+ pointJoueur + " - ordi " + pointOrdi
     }
-
     else if (user_choice=='pierre' && ordi=='ciseaux' || user_choice=="feuille" && ordi=='pierre' || user_choice=='ciseaux' && ordi=="feuille" ){
       pointJoueur++;
       bienvenue.innerHTML = "Gagné" ;
       score.innerHTML = value +" "+ pointJoueur + " - ordi " + pointOrdi ;
     }
-    else {
-    bienvenue.innerHTML = "Nul !" ;
-    score.innerHTML = value +" "+ pointJoueur + " - ordi " + pointOrdi;
+    else if (user_choice=="pierre" && ordi=="pierre" || user_choice=="feuille" && ordi=="feuille" || user_choice=="ciseaux" && ordi=="ciseaux" ){
+      bienvenue.innerHTML = "Nul !" ;
+      score.innerHTML = value +" "+ pointJoueur + " - ordi " + pointOrdi;
     }
   }
 
