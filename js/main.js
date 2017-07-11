@@ -70,7 +70,7 @@ var ordi = Math.random()*3 ;
     if (user_choice=='pierre' && ordi=="feuille" || user_choice=="feuille" && ordi=='ciseaux' || user_choice=='ciseaux' && ordi=='pierre'){
       pointOrdi++;
       bienvenue.innerHTML= "Perdu " ;
-      score.innerHTML = value +" "+ pointJoueur + " - ordi " + pointOrdi
+      score.innerHTML = value +" "+ pointJoueur + " - ordi " + pointOrdi;
     }
     else if (user_choice=='pierre' && ordi=='ciseaux' || user_choice=="feuille" && ordi=='pierre' || user_choice=='ciseaux' && ordi=="feuille" ){
       pointJoueur++;
@@ -81,83 +81,10 @@ var ordi = Math.random()*3 ;
       bienvenue.innerHTML = "Nul !" ;
       score.innerHTML = value +" "+ pointJoueur + " - ordi " + pointOrdi;
     }
-  }
-
-
-
-/*var pierre = document.getElementById('pierre');
-var feuille = document.getElementById('feuille');
-var ciseaux = document.getElementById('ciseaux');
-var pointJoueur = 0;
-var pointOrdi = 0;
-var ordi = Math.random()*3 ;
-
-  if (ordi<1){
-    ordi=pierre;
-  }
-  else if (ordi>1 && ordi<2){
-    ordi=feuille;
-  }
-  else if (ordi>2){
-    ordi=ciseaux;
-  }
-
-  if(jeu==pierre && ordi==feuille || jeu==feuille && ordi==ciseaux || jeu==ciseaux && ordi==pierre){
-    pointOrdi++;
-    alert("Perdu\n" + joueur +" "+ pointJoueur + " - ordi " + pointOrdi + "\nPour quitter le jeu, tapez 'exit'");
-  }
-
-  else if (jeu==pierre && ordi==ciseaux || jeu==feuille && ordi==pierre || jeu==ciseaux && ordi==feuille ){
-    pointJoueur++;
-    alert("Gagné \n" + joueur +" "+ pointJoueur + " - ordi " + pointOrdi  + "\nPour quitter le jeu, tapez 'exit'");
-  }
-  else {
-    alert("Nul !\n" + joueur +" "+ pointJoueur + " - ordi " + pointOrdi  + "\nPour quitter le jeu, tapez 'exit'");
-  }
- }
- }*/
-
-// function myFunction(){
-//   var el = document.getElementById("start");
-//
-// var pointJoueur = 0;
-// var pointOrdi = 0;
-//
-//
-// while (pointJoueur <3 && pointOrdi <3 && jeu!="exit"){
-//         var ordi = Math.random()*3 ;
-//         var jeu = prompt("Choisissez entre pierre, feuille ou ciseaux").toLowerCase();
-//
-//         if (ordi<1){
-//           ordi="pierre";
-//         }
-//         else if (ordi>1 && ordi<2){
-//           ordi="feuille";
-//         }
-//         else if (ordi>2){
-//           ordi="ciseaux";
-//         }
-//
-//         if(jeu==pierre && ordi=="feuille" || jeu=="feuille" && ordi=="ciseaux" || jeu=="ciseaux" && ordi==pierre){
-//           pointOrdi++;
-//           alert("Perdu\n" + joueur +" "+ pointJoueur + " - ordi " + pointOrdi + "\nPour quitter le jeu, tapez 'exit'");
-//         }
-//
-//        else if (jeu=="pierre" && ordi=="ciseaux" || jeu=="feuille" && ordi=="pierre" || jeu=="ciseaux" && ordi=="feuille" ){
-//           pointJoueur++;
-//           alert("Gagné \n" + joueur +" "+ pointJoueur + " - ordi " + pointOrdi  + "\nPour quitter le jeu, tapez 'exit'");
-//         }
-//         else if (jeu=="pierre" && ordi=="pierre" || jeu=="feuille" && ordi=="feuille" || jeu=="ciseaux" && ordi=="ciseaux" ){
-//           alert("Nul !\n" + joueur +" "+ pointJoueur + " - ordi " + pointOrdi  + "\nPour quitter le jeu, tapez 'exit'");
-//         }
-//         else if (jeu=="exit"){
-//         	alert("Au revoir");
-//        }
-//        else if (jeu==""){
-//        	alert('Vous devez choisir entre les 3 propositions !');
-//        }
-//        else {
-//         alert('Veuillez entrer une donnée correcte !');
-//       }
-//   }
-// }*/
+      if (pointJoueur ===3){
+      score.innerHTML= value + "gagnant"  ;
+    }
+    else if (pointOrdi===3){
+      score.innerHTML= 'ordi gagnant';
+    }
+}
