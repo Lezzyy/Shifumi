@@ -88,3 +88,7 @@ var ordi = Math.random()*3 ;
       score.innerHTML= 'ordi gagnant';
     }
 }
+
+function restart(){
+  window.location.reload();
+}
